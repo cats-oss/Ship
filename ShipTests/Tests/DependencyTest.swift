@@ -1,5 +1,4 @@
 @testable import Ship
-import SwiftProtobuf
 import XCTest
 
 private final class DependencyTest: XCTestCase {

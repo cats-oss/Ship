@@ -1,5 +1,4 @@
 @testable import Ship
-import SwiftProtobuf
 import XCTest
 
 private final class RequestProxyTest: XCTestCase {
@@ -28,6 +27,6 @@ private final class RequestProxyTest: XCTestCase {
         let dependency = DependencyMock()
         let url = URL(string: "http://test.test")!
         let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)!
-        XCTAssertEqual(try! RequestProxy(request: RequestMock(), dependency: dependency).intercept(object: "response", urlResponse: response) as? Google_Protobuf_Empty, Google_Protobuf_Empty())
+        XCTAssertEqual(try! RequestProxy(request: RequestMock(), dependency: dependency).intercept(object: "response", urlResponse: response) as? String, "intercept")
     }
 }

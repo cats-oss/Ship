@@ -1,2 +1,1 @@
 github "ishkawa/APIKit" == 5.0.0
-github "apple/swift-protobuf" == 1.5.0

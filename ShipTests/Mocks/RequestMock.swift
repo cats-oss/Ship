@@ -1,6 +1,5 @@
 import APIKit
 import Ship
-import SwiftProtobuf
 
 struct RequestMock: Ship.Request {
     var method: HTTPMethod = .get
@@ -16,10 +15,10 @@ struct RequestMock: Ship.Request {
     }
 
     func intercept(object: Any, urlResponse: HTTPURLResponse) throws -> Any {
-        return Google_Protobuf_Empty()
+        return "intercept"
     }
 
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Google_Protobuf_Empty {
-        return Google_Protobuf_Empty()
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> String {
+        return "response"
     }
 }

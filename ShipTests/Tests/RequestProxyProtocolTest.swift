@@ -1,6 +1,5 @@
 @testable import Ship
 import APIKit
-import SwiftProtobuf
 import XCTest
 
 private final class RequestProxyProtocolTest: XCTestCase {
@@ -19,7 +18,7 @@ private final class RequestProxyProtocolTest: XCTestCase {
         XCTAssertNil(proxy.bodyParameters)
         XCTAssertEqual(proxy.dataParser.contentType, "application/protobuf")
         XCTAssertEqual(try! proxy.intercept(urlRequest: URLRequest(url: url)).url, url)
-        XCTAssertEqual(try! proxy.intercept(object: "", urlResponse: HTTPURLResponse()) as? Google_Protobuf_Empty, Google_Protobuf_Empty())
-        XCTAssertEqual(try! proxy.response(from: "", urlResponse: HTTPURLResponse()), Google_Protobuf_Empty())
+        XCTAssertEqual(try! proxy.intercept(object: "", urlResponse: HTTPURLResponse()) as? String, "intercept")
+        XCTAssertEqual(try! proxy.response(from: "", urlResponse: HTTPURLResponse()), "response")
     }
 }

@@ -1,6 +1,5 @@
 @testable import Ship
 import APIKit
-import SwiftProtobuf
 import XCTest
 
 private final class RequestTest: XCTestCase {
@@ -19,8 +18,8 @@ private struct PathComponentStub: RequestBasePathComponent {
 private struct RequestStub1: Ship.Request {
     var method: HTTPMethod = .get
     var path = ""
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Google_Protobuf_Empty {
-        return Google_Protobuf_Empty()
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Data {
+        return Data()
     }
 }
 
@@ -28,7 +27,7 @@ private struct RequestStub2: Ship.Request {
     var method: HTTPMethod = .get
     var path = ""
     var basePathComponent: PathComponentStub? = .init()
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Google_Protobuf_Empty {
-        return Google_Protobuf_Empty()
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Data {
+        return Data()
     }
 }

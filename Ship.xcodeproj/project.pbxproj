@@ -9,19 +9,14 @@
 /* Begin PBXBuildFile section */
 		C755D5D0225C48DC005B0CEF /* Ship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5C6225C48DB005B0CEF /* Ship.framework */; };
 		C755D5FB225C67B6005B0CEF /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
-		C755D5FD225C6936005B0CEF /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */; };
-		C755D60A225C6EAC005B0CEF /* ProtobufRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D5FF225C6EAC005B0CEF /* ProtobufRequestTest.swift */; };
 		C755D611225C6EAC005B0CEF /* RequestProxyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */; };
 		C755D612225C6EAC005B0CEF /* RequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D608225C6EAC005B0CEF /* RequestMock.swift */; };
 		C755D613225C6EAC005B0CEF /* DependencyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D609225C6EAC005B0CEF /* DependencyMock.swift */; };
 		C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
-		C7D02309225CC4C800B76B20 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */; };
-		C7D0230B225CC4DE00B76B20 /* SwiftProtobuf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7D02312225CD4D900B76B20 /* DependencyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0230E225CD4D900B76B20 /* DependencyTest.swift */; };
 		C7D0231B225CD64400B76B20 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0231A225CD64400B76B20 /* RequestTest.swift */; };
 		C7D0231D225CE60E00B76B20 /* SessionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0231C225CE60E00B76B20 /* SessionTest.swift */; };
-		C7D0231F225CE74000B76B20 /* ProtobufBodyParameters+MessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0231E225CE74000B76B20 /* ProtobufBodyParameters+MessageTest.swift */; };
 		C7D02322225CE7BA00B76B20 /* RequestProxyProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D02320225CE7BA00B76B20 /* RequestProxyProtocolTest.swift */; };
 		C7D02323225CE7BA00B76B20 /* RequestProxyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D02321225CE7BA00B76B20 /* RequestProxyTest.swift */; };
 		C7FDA03F226DB6770092F224 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA033226DB6760092F224 /* Session.swift */; };
@@ -29,10 +24,7 @@
 		C7FDA041226DB6770092F224 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA035226DB6760092F224 /* Dependency.swift */; };
 		C7FDA042226DB6770092F224 /* RequestBasePathComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA036226DB6760092F224 /* RequestBasePathComponent.swift */; };
 		C7FDA043226DB6770092F224 /* RequestProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA037226DB6760092F224 /* RequestProxy.swift */; };
-		C7FDA045226DB6770092F224 /* ProtobufResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA039226DB6760092F224 /* ProtobufResponseError.swift */; };
 		C7FDA046226DB6770092F224 /* RequestProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA03A226DB6760092F224 /* RequestProxyProtocol.swift */; };
-		C7FDA047226DB6770092F224 /* ProtobufRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA03B226DB6760092F224 /* ProtobufRequest.swift */; };
-		C7FDA048226DB6770092F224 /* ProtobufBodyParameters+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA03C226DB6760092F224 /* ProtobufBodyParameters+Message.swift */; };
 		C7FDA049226DB6770092F224 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDA03D226DB6770092F224 /* Request.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C7D0230B225CC4DE00B76B20 /* SwiftProtobuf.framework in CopyFiles */,
 				C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,14 +58,12 @@
 		C755D5F8225C67B6005B0CEF /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C755D5F9225C67B6005B0CEF /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/iOS/SwiftProtobuf.framework; sourceTree = "<group>"; };
-		C755D5FF225C6EAC005B0CEF /* ProtobufRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtobufRequestTest.swift; sourceTree = "<group>"; };
 		C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyMock.swift; sourceTree = "<group>"; };
 		C755D608225C6EAC005B0CEF /* RequestMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMock.swift; sourceTree = "<group>"; };
 		C755D609225C6EAC005B0CEF /* DependencyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyMock.swift; sourceTree = "<group>"; };
 		C7D0230E225CD4D900B76B20 /* DependencyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyTest.swift; sourceTree = "<group>"; };
 		C7D0231A225CD64400B76B20 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
 		C7D0231C225CE60E00B76B20 /* SessionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTest.swift; sourceTree = "<group>"; };
-		C7D0231E225CE74000B76B20 /* ProtobufBodyParameters+MessageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProtobufBodyParameters+MessageTest.swift"; sourceTree = "<group>"; };
 		C7D02320225CE7BA00B76B20 /* RequestProxyProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyProtocolTest.swift; sourceTree = "<group>"; };
 		C7D02321225CE7BA00B76B20 /* RequestProxyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyTest.swift; sourceTree = "<group>"; };
 		C7FDA033226DB6760092F224 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -83,10 +72,7 @@
 		C7FDA036226DB6760092F224 /* RequestBasePathComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBasePathComponent.swift; sourceTree = "<group>"; };
 		C7FDA037226DB6760092F224 /* RequestProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxy.swift; sourceTree = "<group>"; };
 		C7FDA038226DB6760092F224 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7FDA039226DB6760092F224 /* ProtobufResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtobufResponseError.swift; sourceTree = "<group>"; };
 		C7FDA03A226DB6760092F224 /* RequestProxyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyProtocol.swift; sourceTree = "<group>"; };
-		C7FDA03B226DB6760092F224 /* ProtobufRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtobufRequest.swift; sourceTree = "<group>"; };
-		C7FDA03C226DB6760092F224 /* ProtobufBodyParameters+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProtobufBodyParameters+Message.swift"; sourceTree = "<group>"; };
 		C7FDA03D226DB6770092F224 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C7FDA03E226DB6770092F224 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
 		C7FDA04C226DC54F0092F224 /* Ship.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ship.xcconfig; sourceTree = "<group>"; };
@@ -97,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C755D5FD225C6936005B0CEF /* SwiftProtobuf.framework in Frameworks */,
 				C755D5FB225C67B6005B0CEF /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +92,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */,
-				C7D02309225CC4C800B76B20 /* SwiftProtobuf.framework in Frameworks */,
 				C755D5D0225C48DC005B0CEF /* Ship.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +125,6 @@
 				C7FDA034226DB6760092F224 /* AnyBasePathComponent.swift */,
 				C7FDA035226DB6760092F224 /* Dependency.swift */,
 				C7FDA038226DB6760092F224 /* Info.plist */,
-				C7FDA03C226DB6760092F224 /* ProtobufBodyParameters+Message.swift */,
-				C7FDA03B226DB6760092F224 /* ProtobufRequest.swift */,
-				C7FDA039226DB6760092F224 /* ProtobufResponseError.swift */,
 				C7FDA03D226DB6770092F224 /* Request.swift */,
 				C7FDA036226DB6760092F224 /* RequestBasePathComponent.swift */,
 				C7FDA037226DB6760092F224 /* RequestProxy.swift */,
@@ -178,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				C7D0230E225CD4D900B76B20 /* DependencyTest.swift */,
-				C7D0231E225CE74000B76B20 /* ProtobufBodyParameters+MessageTest.swift */,
-				C755D5FF225C6EAC005B0CEF /* ProtobufRequestTest.swift */,
 				C7D02320225CE7BA00B76B20 /* RequestProxyProtocolTest.swift */,
 				C7D02321225CE7BA00B76B20 /* RequestProxyTest.swift */,
 				C7D0231A225CD64400B76B20 /* RequestTest.swift */,
@@ -321,14 +300,12 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftProtobuf.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftProtobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,9 +320,6 @@
 			files = (
 				C7FDA041226DB6770092F224 /* Dependency.swift in Sources */,
 				C7FDA042226DB6770092F224 /* RequestBasePathComponent.swift in Sources */,
-				C7FDA047226DB6770092F224 /* ProtobufRequest.swift in Sources */,
-				C7FDA045226DB6770092F224 /* ProtobufResponseError.swift in Sources */,
-				C7FDA048226DB6770092F224 /* ProtobufBodyParameters+Message.swift in Sources */,
 				C7FDA046226DB6770092F224 /* RequestProxyProtocol.swift in Sources */,
 				C7FDA040226DB6770092F224 /* AnyBasePathComponent.swift in Sources */,
 				C7FDA049226DB6770092F224 /* Request.swift in Sources */,
@@ -359,14 +333,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C755D612225C6EAC005B0CEF /* RequestMock.swift in Sources */,
-				C7D0231F225CE74000B76B20 /* ProtobufBodyParameters+MessageTest.swift in Sources */,
 				C7D0231B225CD64400B76B20 /* RequestTest.swift in Sources */,
 				C7D02323225CE7BA00B76B20 /* RequestProxyTest.swift in Sources */,
 				C7D02312225CD4D900B76B20 /* DependencyTest.swift in Sources */,
 				C755D613225C6EAC005B0CEF /* DependencyMock.swift in Sources */,
 				C755D611225C6EAC005B0CEF /* RequestProxyMock.swift in Sources */,
 				C7D02322225CE7BA00B76B20 /* RequestProxyProtocolTest.swift in Sources */,
-				C755D60A225C6EAC005B0CEF /* ProtobufRequestTest.swift in Sources */,
 				C7D0231D225CE60E00B76B20 /* SessionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

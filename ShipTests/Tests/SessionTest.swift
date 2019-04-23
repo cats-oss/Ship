@@ -1,6 +1,5 @@
 @testable import Ship
 import APIKit
-import SwiftProtobuf
 import XCTest
 
 private final class SessionTest: XCTestCase {

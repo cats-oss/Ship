@@ -12,7 +12,6 @@ private final class RequestProxyTest: XCTestCase {
 
     func testHeaderFields() {
         let dependency = DependencyMock()
-        dependency.headerFields = ["Header": "Fields"]
         XCTAssertEqual(RequestProxy(request: RequestMock(), dependency: dependency).headerFields, ["Header": "Fields"])
     }
 

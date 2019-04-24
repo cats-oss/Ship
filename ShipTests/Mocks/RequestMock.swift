@@ -9,6 +9,7 @@ struct RequestMock: Ship.Request {
     var queryParameters: [String: Any]? = ["query": "param"]
     var bodyParameters: BodyParameters?
     var dataParser: DataParser = ProtobufDataParser()
+    var headerFields: [String: String] = ["Header": "Fields"]
 
     func intercept(urlRequest: URLRequest) throws -> URLRequest {
         return urlRequest

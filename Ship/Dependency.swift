@@ -8,6 +8,10 @@ public protocol Dependency {
 }
 
 public extension Dependency {
+    func buildHeaderFields<R: Request>(_ request: R) -> [String : String] {
+        return request.headerFields
+    }
+
     func intercept<R: Request>(request: R, urlRequest: URLRequest) throws -> URLRequest {
         return urlRequest
     }

@@ -57,9 +57,7 @@
 		C755D5C6225C48DB005B0CEF /* Ship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C755D5CF225C48DC005B0CEF /* ShipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C755D5D6225C48DC005B0CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C755D5F8225C67B6005B0CEF /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C755D5F9225C67B6005B0CEF /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
-		C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/iOS/SwiftProtobuf.framework; sourceTree = "<group>"; };
 		C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyMock.swift; sourceTree = "<group>"; };
 		C755D608225C6EAC005B0CEF /* RequestMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMock.swift; sourceTree = "<group>"; };
 		C755D609225C6EAC005B0CEF /* DependencyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyMock.swift; sourceTree = "<group>"; };
@@ -153,9 +151,7 @@
 		C755D5F7225C67B6005B0CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C755D5FC225C6936005B0CEF /* SwiftProtobuf.framework */,
 				C755D5F9225C67B6005B0CEF /* APIKit.framework */,
-				C755D5F8225C67B6005B0CEF /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

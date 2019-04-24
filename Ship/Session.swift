@@ -12,6 +12,7 @@ open class Session {
         session = APIKit.Session(adapter: adapter, callbackQueue: .sessionQueue)
     }
 
+    @discardableResult
     open func send<R: Request>(_ request: R, callbackQueue: CallbackQueue? = nil, handler: @escaping (Result<R.Response, SessionTaskError>) -> Void) -> SessionTask? {
         let proxy = RequestProxy(request: request, dependency: dependency)
         return session.send(proxy, callbackQueue: callbackQueue, handler: handler)

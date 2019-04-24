@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target   = '2.0'
   s.source_files     = 'Ship/**/*.{h,swift}'
   s.requires_arc     = true
+  s.dependency "APIKit", "~> 5.0"
 end

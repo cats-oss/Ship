@@ -1,4 +1,3 @@
-import Foundation
 import Ship
 
 struct RequestDependency: Dependency {

@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <APIKit/APIKit.h>
 
 //! Project version number for Ship.
 FOUNDATION_EXPORT double ShipVersionNumber;

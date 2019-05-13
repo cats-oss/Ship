@@ -1,7 +1,6 @@
-import APIKit
 import Ship
 
-struct GetRateLimitRequest: Ship.Request {
+struct GetRateLimitRequest: Request {
     let method = HTTPMethod.get
     let path = "/rate_limit"
 

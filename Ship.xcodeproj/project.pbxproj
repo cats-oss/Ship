@@ -12,8 +12,8 @@
 		C755D611225C6EAC005B0CEF /* RequestProxyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */; };
 		C755D612225C6EAC005B0CEF /* RequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D608225C6EAC005B0CEF /* RequestMock.swift */; };
 		C755D613225C6EAC005B0CEF /* DependencyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D609225C6EAC005B0CEF /* DependencyMock.swift */; };
-		C78C860B226FFCE500B14BB1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C860A226FFCE500B14BB1 /* HTTPMethod.swift */; };
 		C78C860D2270000900B14BB1 /* AnyBasePathComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C860C2270000900B14BB1 /* AnyBasePathComponentTest.swift */; };
+		C7B219DE2289176900B0579D /* Ship.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FDA03E226DB6770092F224 /* Ship.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
 		C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7D02312225CD4D900B76B20 /* DependencyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0230E225CD4D900B76B20 /* DependencyTest.swift */; };
@@ -61,7 +61,6 @@
 		C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyMock.swift; sourceTree = "<group>"; };
 		C755D608225C6EAC005B0CEF /* RequestMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMock.swift; sourceTree = "<group>"; };
 		C755D609225C6EAC005B0CEF /* DependencyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyMock.swift; sourceTree = "<group>"; };
-		C78C860A226FFCE500B14BB1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		C78C860C2270000900B14BB1 /* AnyBasePathComponentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyBasePathComponentTest.swift; sourceTree = "<group>"; };
 		C7D0230E225CD4D900B76B20 /* DependencyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyTest.swift; sourceTree = "<group>"; };
 		C7D0231A225CD64400B76B20 /* RequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 				C7FDA03A226DB6760092F224 /* RequestProxyProtocol.swift */,
 				C7FDA033226DB6760092F224 /* Session.swift */,
 				C7FDA03E226DB6770092F224 /* Ship.h */,
-				C78C860A226FFCE500B14BB1 /* HTTPMethod.swift */,
 			);
 			path = Ship;
 			sourceTree = "<group>";
@@ -194,6 +192,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B219DE2289176900B0579D /* Ship.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +323,6 @@
 				C7FDA042226DB6770092F224 /* RequestBasePathComponent.swift in Sources */,
 				C7FDA046226DB6770092F224 /* RequestProxyProtocol.swift in Sources */,
 				C7FDA040226DB6770092F224 /* AnyBasePathComponent.swift in Sources */,
-				C78C860B226FFCE500B14BB1 /* HTTPMethod.swift in Sources */,
 				C7FDA049226DB6770092F224 /* Request.swift in Sources */,
 				C7FDA03F226DB6770092F224 /* Session.swift in Sources */,
 				C7FDA043226DB6770092F224 /* RequestProxy.swift in Sources */,

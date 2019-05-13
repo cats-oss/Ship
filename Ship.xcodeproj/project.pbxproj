@@ -14,6 +14,7 @@
 		C755D613225C6EAC005B0CEF /* DependencyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D609225C6EAC005B0CEF /* DependencyMock.swift */; };
 		C78C860B226FFCE500B14BB1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C860A226FFCE500B14BB1 /* HTTPMethod.swift */; };
 		C78C860D2270000900B14BB1 /* AnyBasePathComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C860C2270000900B14BB1 /* AnyBasePathComponentTest.swift */; };
+		C7B219DE2289176900B0579D /* Ship.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FDA03E226DB6770092F224 /* Ship.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
 		C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7D02312225CD4D900B76B20 /* DependencyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0230E225CD4D900B76B20 /* DependencyTest.swift */; };
@@ -194,6 +195,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B219DE2289176900B0579D /* Ship.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

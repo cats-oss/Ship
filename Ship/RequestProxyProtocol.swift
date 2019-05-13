@@ -1,5 +1,3 @@
-import APIKit
-
 protocol RequestProxyProtocol: Request {
     associatedtype Request: APIKit.Request
 

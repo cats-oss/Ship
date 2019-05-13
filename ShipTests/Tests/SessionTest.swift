@@ -1,5 +1,4 @@
 @testable import Ship
-import APIKit
 import XCTest
 
 private final class SessionTest: XCTestCase {

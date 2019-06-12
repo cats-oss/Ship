@@ -207,7 +207,6 @@
 				C755D5C2225C48DB005B0CEF /* Sources */,
 				C755D5C3225C48DB005B0CEF /* Frameworks */,
 				C755D5C4225C48DB005B0CEF /* Resources */,
-				C755D5F6225C665B005B0CEF /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -290,29 +289,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C755D5F6225C665B005B0CEF /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/APIKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C755D5C2225C48DB005B0CEF /* Sources */ = {

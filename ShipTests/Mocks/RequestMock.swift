@@ -1,6 +1,7 @@
 import Ship
+import APIKit
 
-struct RequestMock: Request {
+struct RequestMock: Ship.Request {
     var method: HTTPMethod = .get
     var path: String = "path"
     var parameters: Any? = "param"

@@ -3,19 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AD8392125DBD3170048F931 /* APIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD8392025DBD3170048F931 /* APIKit.xcframework */; };
+		5AD8392225DBD3170048F931 /* APIKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD8392025DBD3170048F931 /* APIKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C755D5D0225C48DC005B0CEF /* Ship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5C6225C48DB005B0CEF /* Ship.framework */; };
-		C755D5FB225C67B6005B0CEF /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
 		C755D611225C6EAC005B0CEF /* RequestProxyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */; };
 		C755D612225C6EAC005B0CEF /* RequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D608225C6EAC005B0CEF /* RequestMock.swift */; };
 		C755D613225C6EAC005B0CEF /* DependencyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755D609225C6EAC005B0CEF /* DependencyMock.swift */; };
 		C78C860D2270000900B14BB1 /* AnyBasePathComponentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C860C2270000900B14BB1 /* AnyBasePathComponentTest.swift */; };
 		C7B219DE2289176900B0579D /* Ship.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FDA03E226DB6770092F224 /* Ship.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; };
-		C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C755D5F9225C67B6005B0CEF /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7D02312225CD4D900B76B20 /* DependencyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0230E225CD4D900B76B20 /* DependencyTest.swift */; };
 		C7D0231B225CD64400B76B20 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0231A225CD64400B76B20 /* RequestTest.swift */; };
 		C7D0231D225CE60E00B76B20 /* SessionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0231C225CE60E00B76B20 /* SessionTest.swift */; };
@@ -41,23 +40,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5AD8392325DBD3170048F931 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AD8392225DBD3170048F931 /* APIKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7D0230A225CC4CB00B76B20 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C7D0230C225CC4DE00B76B20 /* APIKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5AD8392025DBD3170048F931 /* APIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = APIKit.xcframework; path = Carthage/Build/APIKit.xcframework; sourceTree = "<group>"; };
 		C755D5C6225C48DB005B0CEF /* Ship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C755D5CF225C48DC005B0CEF /* ShipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C755D5D6225C48DC005B0CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C755D5F9225C67B6005B0CEF /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		C755D607225C6EAC005B0CEF /* RequestProxyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProxyMock.swift; sourceTree = "<group>"; };
 		C755D608225C6EAC005B0CEF /* RequestMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMock.swift; sourceTree = "<group>"; };
 		C755D609225C6EAC005B0CEF /* DependencyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyMock.swift; sourceTree = "<group>"; };
@@ -84,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C755D5FB225C67B6005B0CEF /* APIKit.framework in Frameworks */,
+				5AD8392125DBD3170048F931 /* APIKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D02307225CC4C800B76B20 /* APIKit.framework in Frameworks */,
 				C755D5D0225C48DC005B0CEF /* Ship.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +157,7 @@
 		C755D5F7225C67B6005B0CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C755D5F9225C67B6005B0CEF /* APIKit.framework */,
+				5AD8392025DBD3170048F931 /* APIKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				C755D5C2225C48DB005B0CEF /* Sources */,
 				C755D5C3225C48DB005B0CEF /* Frameworks */,
 				C755D5C4225C48DB005B0CEF /* Resources */,
+				5AD8392325DBD3170048F931 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

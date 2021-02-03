@@ -1,3 +1,5 @@
+import APIKit
+
 open class Session {
     private let session: APIKit.Session
     private let dependency: Dependency

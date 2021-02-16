@@ -1,4 +1,5 @@
 import APIKit
+import Foundation
 
 public protocol Request: APIKit.Request {
     associatedtype Component: RequestBasePathComponent

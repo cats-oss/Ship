@@ -1,5 +1,6 @@
-import Ship
 import APIKit
+import Foundation
+import Ship
 
 struct RequestMock: Ship.Request {
     var method: HTTPMethod = .get

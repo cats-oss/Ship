@@ -1,3 +1,6 @@
+import APIKit
+import Foundation
+
 protocol RequestProxyProtocol: Request {
     associatedtype Request: APIKit.Request
 

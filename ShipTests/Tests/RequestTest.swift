@@ -1,4 +1,5 @@
 @testable import Ship
+import APIKit
 import XCTest
 
 private final class RequestTest: XCTestCase {

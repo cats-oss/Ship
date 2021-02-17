@@ -7,6 +7,7 @@ WATCHOS_DEPLOYMENT_TARGET = 2.0
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator watchos watchsimulator appletvos appletvsimulator
 TARGETED_DEVICE_FAMILY = 1,2,3,4
 
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/Carthage/Build/
 FRAMEWORK_SEARCH_PATHS[sdk=macosx*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/Mac
 FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
 FRAMEWORK_SEARCH_PATHS[sdk=watch*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/watchOS

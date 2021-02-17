@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Ship'
-  s.version          = '0.1.3'
+  s.version          = '1.0.0'
   s.swift_version    = '5.0'
   s.summary          = 'Ship is a APIKit plugin that can inject common processing to requests on APIKit.'
   s.homepage         = 'https://github.com/cats-oss/Ship'
